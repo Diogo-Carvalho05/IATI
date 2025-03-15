@@ -31,3 +31,14 @@ C:\Users\wagne\Documents\GitHub\IATI\systema_IATI\systema_IATI\sys_IATI\sys_IATI
 C:\Users\wagne\Documents\GitHub\IATI\systema_IATI\systema_IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.csproj.CoreCompileInputs.cache
 C:\Users\wagne\Documents\GitHub\IATI\systema_IATI\systema_IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.exe
 C:\Users\wagne\Documents\GitHub\IATI\systema_IATI\systema_IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.pdb
+C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\bin\Debug\sys_IATI.exe.config
+C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\bin\Debug\sys_IATI.exe
+C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\bin\Debug\sys_IATI.pdb
+C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.csproj.AssemblyReference.cache
+C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.Login_IATI.resources
+C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.Menu_IATI.resources
+C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.Properties.Resources.resources
+C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.csproj.GenerateResource.cache
+C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.csproj.CoreCompileInputs.cache
+C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.exe
+C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.pdb
