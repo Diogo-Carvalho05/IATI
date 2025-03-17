@@ -4,9 +4,12 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http.Headers;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Newtonsoft.Json;
 
 namespace sys_IATI
 {
@@ -34,8 +37,33 @@ namespace sys_IATI
 
         }
 
+        
+       
+        //caixa de texto decriçao
+        private void txtDescricao_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        //caixa de texto titulo 
+        private void txtTitulo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        //botao de iniciar o chamado 
+        private void btchamado_Click(object sender, EventArgs e)
+        {
+
+            Sugestao_IA IA = new Sugestao_IA();
+            IA.Show();
+            this.Hide();
+           
+
+        }
+        
         //abaixo esta os 3 botões que mostra as sugestões da IA
-        private void btSugestao1_CheckedChanged(object sender, EventArgs e)
+        private void btSugestao1_CheckedChanged_1(object sender, EventArgs e)
         {
 
         }
@@ -46,12 +74,6 @@ namespace sys_IATI
         }
 
         private void btSugestao3_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-       
-        //botao de iniciar o chamado 
-        private void btchamado_Click(object sender, EventArgs e)
         {
 
         }

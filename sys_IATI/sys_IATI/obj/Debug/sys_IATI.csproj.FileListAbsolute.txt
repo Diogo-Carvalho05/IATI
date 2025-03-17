@@ -42,3 +42,18 @@ C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.csproj.Ge
 C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.csproj.CoreCompileInputs.cache
 C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.exe
 C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.pdb
+H:\TI\08 - Diogo\IATI-main\sys_IATI\sys_IATI\bin\Debug\sys_IATI.exe
+H:\TI\08 - Diogo\IATI-main\sys_IATI\sys_IATI\bin\Debug\sys_IATI.exe.config
+H:\TI\08 - Diogo\IATI-main\sys_IATI\sys_IATI\bin\Debug\Newtonsoft.Json.dll
+H:\TI\08 - Diogo\IATI-main\sys_IATI\sys_IATI\bin\Debug\Newtonsoft.Json.xml
+H:\TI\08 - Diogo\IATI-main\sys_IATI\sys_IATI\obj\Debug\sys_IATI.csproj.AssemblyReference.cache
+H:\TI\08 - Diogo\IATI-main\sys_IATI\sys_IATI\obj\Debug\sys_IATI.Login_IATI.resources
+H:\TI\08 - Diogo\IATI-main\sys_IATI\sys_IATI\obj\Debug\sys_IATI.Menu_IATI.resources
+H:\TI\08 - Diogo\IATI-main\sys_IATI\sys_IATI\obj\Debug\sys_IATI.Properties.Resources.resources
+H:\TI\08 - Diogo\IATI-main\sys_IATI\sys_IATI\obj\Debug\sys_IATI.csproj.GenerateResource.cache
+H:\TI\08 - Diogo\IATI-main\sys_IATI\sys_IATI\obj\Debug\sys_IATI.csproj.CoreCompileInputs.cache
+H:\TI\08 - Diogo\IATI-main\sys_IATI\sys_IATI\obj\Debug\sys_IATI.csproj.Up2Date
+H:\TI\08 - Diogo\IATI-main\sys_IATI\sys_IATI\obj\Debug\sys_IATI.exe
+H:\TI\08 - Diogo\IATI-main\sys_IATI\sys_IATI\obj\Debug\sys_IATI.pdb
+H:\TI\08 - Diogo\IATI-main\sys_IATI\sys_IATI\bin\Debug\sys_IATI.pdb
+H:\TI\08 - Diogo\IATI-main\sys_IATI\sys_IATI\obj\Debug\sys_IATI.Sugestao_IA.resources
