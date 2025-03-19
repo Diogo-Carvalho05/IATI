@@ -1,57 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\diogo.torres\\Documents\\GitHub\\IATI\\IATI\\sys_IATI\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{06168E84-017D-4244-8521-5C5428E3B75D}|sys_IATI\\sys_IATI.csproj|C:\\Users\\diogo.torres\\Documents\\GitHub\\IATI\\IATI\\sys_IATI\\sys_iati\\sugestao ia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{06168E84-017D-4244-8521-5C5428E3B75D}|sys_IATI\\sys_IATI.csproj|solutionrelative:sys_iati\\sugestao ia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06168E84-017D-4244-8521-5C5428E3B75D}|sys_IATI\\sys_IATI.csproj|c:\\users\\diogo.torres\\documents\\github\\iati\\iati\\sys_iati\\sys_iati\\sugestao ia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06168E84-017D-4244-8521-5C5428E3B75D}|sys_IATI\\sys_IATI.csproj|solutionrelative:sys_iati\\sugestao ia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\wagne\\Documents\\PIM\\IATI\\sys_IATI\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedHeight": 200,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Sugestao IA.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\diogo.torres\\Documents\\GitHub\\IATI\\IATI\\sys_IATI\\sys_IATI\\Sugestao IA.cs",
-              "RelativeDocumentMoniker": "sys_IATI\\Sugestao IA.cs",
-              "ToolTip": "C:\\Users\\diogo.torres\\Documents\\GitHub\\IATI\\IATI\\sys_IATI\\sys_IATI\\Sugestao IA.cs [Design]",
-              "RelativeToolTip": "sys_IATI\\Sugestao IA.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T17:56:37.236Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Sugestao IA.cs",
-              "DocumentMoniker": "C:\\Users\\diogo.torres\\Documents\\GitHub\\IATI\\IATI\\sys_IATI\\sys_IATI\\Sugestao IA.cs",
-              "RelativeDocumentMoniker": "sys_IATI\\Sugestao IA.cs",
-              "ToolTip": "C:\\Users\\diogo.torres\\Documents\\GitHub\\IATI\\IATI\\sys_IATI\\sys_IATI\\Sugestao IA.cs",
-              "RelativeToolTip": "sys_IATI\\Sugestao IA.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA8wCEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T17:54:35.777Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
