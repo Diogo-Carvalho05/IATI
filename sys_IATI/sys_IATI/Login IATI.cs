@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,24 +17,58 @@ namespace sys_IATI
         {
             InitializeComponent();
         }
-        
-        //botao de acesso 
+
         private void btAcesso_Click(object sender, EventArgs e)
         {
-            string user = "a";
-            string senha = "a";
 
-            if(txtPasseword.Text == senha & txtUsuario.Text == user)
+            string nome = txtUsuario.Text;
+            string senha = txtPasseword.Text;
+
+            // Validação básica
+            if (string.IsNullOrEmpty(nome) || string.IsNullOrEmpty(senha))
             {
-                Menu_IATI menu = new Menu_IATI();
-                menu.Show();
-                this.Hide();
+                MessageBox.Show("Por favor, preencha todos os campos.");
+                return;
             }
 
+            // Verificar as credenciais no banco de dados
+            using (var db = new dbConnection())
+            {
+                try
+                {
+                    // Consulta SQL para verificar o usuário e senha
+                    var query = "SELECT COUNT(*) FROM funcionario WHERE nome = @nome AND senha = @senha";
+                    using (var cmd = new NpgsqlCommand(query, db.Connection))
+                    {
+                        // Passando os parâmetros corretamente
+                        cmd.Parameters.AddWithValue("@nome", nome); 
+                        cmd.Parameters.AddWithValue("@senha", senha); 
+
+                        int result = Convert.ToInt32(cmd.ExecuteScalar());
+
+                        if (result > 0)
+                        {
+                          
+                            Menu_IATI menu = new Menu_IATI();
+                            menu.Show();
+                            this.Hide(); // Oculta a tela de login
+                        }
+                        else
+                        {
+                            MessageBox.Show("Usuário ou senha incorretos.");
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao tentar fazer login: " + ex.Message);
+                }
+            }
 
         }
-           
-          //caixa de texto senha
+
+
+        //caixa de texto senha
         private void txtPasseword_TextChanged(object sender, EventArgs e)
         {
             txtPasseword.PasswordChar = '*';
@@ -45,5 +80,7 @@ namespace sys_IATI
         {
 
         }
+
+        
     }
 }
