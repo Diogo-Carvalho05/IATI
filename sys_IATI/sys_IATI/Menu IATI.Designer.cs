@@ -135,6 +135,7 @@
             // 
             // selecaoTxtServico
             // 
+            this.selecaoTxtServico.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.selecaoTxtServico.BackColor = System.Drawing.SystemColors.Window;
             this.selecaoTxtServico.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.selecaoTxtServico.FormattingEnabled = true;
