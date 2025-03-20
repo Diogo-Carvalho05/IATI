@@ -34,15 +34,12 @@
             this.txtNomeAdm = new System.Windows.Forms.TextBox();
             this.lblNomeAdm = new System.Windows.Forms.Label();
             this.lblCpf = new System.Windows.Forms.Label();
-            this.txtCpf = new System.Windows.Forms.TextBox();
             this.lblId = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();
             this.lblDataNascimento = new System.Windows.Forms.Label();
-            this.txtDataNascimento = new System.Windows.Forms.TextBox();
             this.lblEndereco = new System.Windows.Forms.Label();
             this.txtEndereco = new System.Windows.Forms.TextBox();
             this.lblTelefone = new System.Windows.Forms.Label();
-            this.txtTelefone = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblDataAdmissao = new System.Windows.Forms.Label();
@@ -58,7 +55,10 @@
             this.btStatosAtivo = new System.Windows.Forms.RadioButton();
             this.btStatosInativo = new System.Windows.Forms.RadioButton();
             this.btSalvarAdm = new System.Windows.Forms.Button();
-            this.txtDataAdmissao = new System.Windows.Forms.TextBox();
+            this.txtDataNascimento = new System.Windows.Forms.MaskedTextBox();
+            this.txtDataAdmissao = new System.Windows.Forms.MaskedTextBox();
+            this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.txtCpf = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.logoCadastroAdm)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,6 +71,7 @@
             this.logoCadastroAdm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.logoCadastroAdm.TabIndex = 0;
             this.logoCadastroAdm.TabStop = false;
+            this.logoCadastroAdm.Click += new System.EventHandler(this.logoCadastroAdm_Click);
             // 
             // lblCadastroAdm
             // 
@@ -111,15 +112,6 @@
             this.lblCpf.TabIndex = 5;
             this.lblCpf.Text = "CPF";
             // 
-            // txtCpf
-            // 
-            this.txtCpf.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCpf.Location = new System.Drawing.Point(366, 143);
-            this.txtCpf.Name = "txtCpf";
-            this.txtCpf.Size = new System.Drawing.Size(168, 23);
-            this.txtCpf.TabIndex = 2;
-            this.txtCpf.TextChanged += new System.EventHandler(this.txtCpf_TextChanged);
-            // 
             // lblId
             // 
             this.lblId.AutoSize = true;
@@ -149,15 +141,6 @@
             this.lblDataNascimento.TabIndex = 11;
             this.lblDataNascimento.Text = "Nascimento";
             // 
-            // txtDataNascimento
-            // 
-            this.txtDataNascimento.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataNascimento.Location = new System.Drawing.Point(572, 143);
-            this.txtDataNascimento.Name = "txtDataNascimento";
-            this.txtDataNascimento.Size = new System.Drawing.Size(168, 23);
-            this.txtDataNascimento.TabIndex = 3;
-            this.txtDataNascimento.TextChanged += new System.EventHandler(this.txtDataNascimento_TextChanged);
-            // 
             // lblEndereco
             // 
             this.lblEndereco.AutoSize = true;
@@ -186,15 +169,6 @@
             this.lblTelefone.Size = new System.Drawing.Size(74, 16);
             this.lblTelefone.TabIndex = 15;
             this.lblTelefone.Text = "TELEFONE";
-            // 
-            // txtTelefone
-            // 
-            this.txtTelefone.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefone.Location = new System.Drawing.Point(366, 221);
-            this.txtTelefone.Name = "txtTelefone";
-            this.txtTelefone.Size = new System.Drawing.Size(168, 23);
-            this.txtTelefone.TabIndex = 5;
-            this.txtTelefone.TextChanged += new System.EventHandler(this.txtTelefone_TextChanged);
             // 
             // lblEmail
             // 
@@ -346,14 +320,43 @@
             this.btSalvarAdm.UseVisualStyleBackColor = false;
             this.btSalvarAdm.Click += new System.EventHandler(this.btSalvarAdm_Click);
             // 
+            // txtDataNascimento
+            // 
+            this.txtDataNascimento.Location = new System.Drawing.Point(572, 146);
+            this.txtDataNascimento.Mask = "00/00/0000";
+            this.txtDataNascimento.Name = "txtDataNascimento";
+            this.txtDataNascimento.Size = new System.Drawing.Size(168, 20);
+            this.txtDataNascimento.TabIndex = 33;
+            this.txtDataNascimento.ValidatingType = typeof(System.DateTime);
+            this.txtDataNascimento.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtDataNascimento_MaskInputRejected);
+            // 
             // txtDataAdmissao
             // 
-            this.txtDataAdmissao.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataAdmissao.Location = new System.Drawing.Point(572, 299);
+            this.txtDataAdmissao.Location = new System.Drawing.Point(572, 302);
+            this.txtDataAdmissao.Mask = "00/00/0000";
             this.txtDataAdmissao.Name = "txtDataAdmissao";
-            this.txtDataAdmissao.Size = new System.Drawing.Size(168, 23);
-            this.txtDataAdmissao.TabIndex = 32;
-            this.txtDataAdmissao.TextChanged += new System.EventHandler(this.txtDataAdmissao_TextChanged_1);
+            this.txtDataAdmissao.Size = new System.Drawing.Size(168, 20);
+            this.txtDataAdmissao.TabIndex = 34;
+            this.txtDataAdmissao.ValidatingType = typeof(System.DateTime);
+            this.txtDataAdmissao.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtDataAdmissao_MaskInputRejected);
+            // 
+            // txtTelefone
+            // 
+            this.txtTelefone.Location = new System.Drawing.Point(366, 221);
+            this.txtTelefone.Mask = "(999) 000-0000";
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(168, 20);
+            this.txtTelefone.TabIndex = 35;
+            this.txtTelefone.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtTelefone_MaskInputRejected);
+            // 
+            // txtCpf
+            // 
+            this.txtCpf.Location = new System.Drawing.Point(366, 143);
+            this.txtCpf.Mask = "000.000.000-00";
+            this.txtCpf.Name = "txtCpf";
+            this.txtCpf.Size = new System.Drawing.Size(168, 20);
+            this.txtCpf.TabIndex = 36;
+            this.txtCpf.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtCpf_MaskInputRejected);
             // 
             // cadastroAdm
             // 
@@ -361,7 +364,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateGray;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtCpf);
+            this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.txtDataAdmissao);
+            this.Controls.Add(this.txtDataNascimento);
             this.Controls.Add(this.btSalvarAdm);
             this.Controls.Add(this.btStatosInativo);
             this.Controls.Add(this.btStatosAtivo);
@@ -378,15 +384,12 @@
             this.Controls.Add(this.lblEndereco);
             this.Controls.Add(this.txtEndereco);
             this.Controls.Add(this.lblTelefone);
-            this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblDataNascimento);
-            this.Controls.Add(this.txtDataNascimento);
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.lblCpf);
-            this.Controls.Add(this.txtCpf);
             this.Controls.Add(this.lblNomeAdm);
             this.Controls.Add(this.txtNomeAdm);
             this.Controls.Add(this.lblCadastroAdm);
@@ -407,15 +410,12 @@
         private System.Windows.Forms.TextBox txtNomeAdm;
         private System.Windows.Forms.Label lblNomeAdm;
         private System.Windows.Forms.Label lblCpf;
-        private System.Windows.Forms.TextBox txtCpf;
         private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label lblDataNascimento;
-        private System.Windows.Forms.TextBox txtDataNascimento;
         private System.Windows.Forms.Label lblEndereco;
         private System.Windows.Forms.TextBox txtEndereco;
         private System.Windows.Forms.Label lblTelefone;
-        private System.Windows.Forms.TextBox txtTelefone;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label lblDataAdmissao;
@@ -431,6 +431,9 @@
         private System.Windows.Forms.RadioButton btStatosAtivo;
         private System.Windows.Forms.RadioButton btStatosInativo;
         private System.Windows.Forms.Button btSalvarAdm;
-        private System.Windows.Forms.TextBox txtDataAdmissao;
+        private System.Windows.Forms.MaskedTextBox txtDataNascimento;
+        private System.Windows.Forms.MaskedTextBox txtDataAdmissao;
+        private System.Windows.Forms.MaskedTextBox txtTelefone;
+        private System.Windows.Forms.MaskedTextBox txtCpf;
     }
 }

@@ -29,26 +29,8 @@ namespace sys_IATI
 
         }
 
-        //caixa de texto cpf
-        private void txtCpf_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        //caixa de texto data de nascimento
-        private void txtDataNascimento_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         //caixa de texto email
         private void txtEmail_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        //caixa de texto telefone
-        private void txtTelefone_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -67,12 +49,6 @@ namespace sys_IATI
 
         //caixa de texto setor
         private void txtSetor_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        //caixa de texto data admissão
-        private void txtDataAdmissao_TextChanged_1(object sender, EventArgs e)
         {
 
         }
@@ -105,6 +81,40 @@ namespace sys_IATI
         private void btSalvarAdm_Click(object sender, EventArgs e)
         {
 
+            if (string.IsNullOrEmpty(txtCpf.Text))
+            {
+                MessageBox.Show("Por favor, insira o CPF.");
+                return;
+            }
+
+            // Validação do CPF
+            if (!IsValidCpf(txtCpf.Text))
+            {
+                MessageBox.Show("CPF inválido.");
+                return;
+            }
+
+
+
+
+        }
+
+        //caixa de texto data de nascimento
+        private void txtDataNascimento_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        //caixa de texto telefone
+        private void txtTelefone_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        //caixa de texto data admissão
+        private void txtDataAdmissao_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
         }
 
         //acabei clickando sem querer porem é atela de fundo 
@@ -112,6 +122,58 @@ namespace sys_IATI
         {
 
 
+        }
+
+        //caixa de texto cpf
+        private void txtCpf_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        //abaixo esta algumas validações
+
+
+
+        // Função para validar CPF
+        static bool IsValidCpf(string cpf)
+        {
+            // Remove caracteres que não são dígitos
+            cpf = new string(cpf.Where(char.IsDigit).ToArray());
+
+            // Verifica se tem 11 dígitos
+            if (cpf.Length != 11)
+                return false;
+
+            // Verifica se todos os dígitos são iguais (ex: 111.111.111-11)
+            if (new string(cpf[0], 11) == cpf)
+                return false;
+
+            // Validação dos dígitos verificadores
+            int firstDigit = CalculateCpfDigit(cpf.Substring(0, 9), 10);
+            int secondDigit = CalculateCpfDigit(cpf.Substring(0, 9) + firstDigit, 11);
+
+            return cpf[9] == (char)(firstDigit + '0') && cpf[10] == (char)(secondDigit + '0');
+        }
+
+        // Função para calcular o dígito verificador do CPF
+        static int CalculateCpfDigit(string str, int weight)
+        {
+            int sum = 0;
+
+            for (int i = 0; i < str.Length; i++)
+            {
+                sum += (str[i] - '0') * weight--;
+            }
+
+            int remainder = (sum * 10) % 11;
+            return remainder == 10 ? 0 : remainder;
+        }
+
+        private void logoCadastroAdm_Click(object sender, EventArgs e)
+        {
+            Home home = new Home();
+            home.Show();
+            this.Hide();    
         }
     }
 }
