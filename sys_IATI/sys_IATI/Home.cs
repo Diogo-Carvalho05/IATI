@@ -29,6 +29,21 @@ namespace sys_IATI
 
         }
 
-        
+        //botao de cadastro do admFunconario
+        private void btCadastroAdm_Click(object sender, EventArgs e)
+        {
+            cadastroAdm  cadAdm = new cadastroAdm();
+            cadAdm.Show();
+            this.Hide(); // Oculta a tela de login
+
+
+        }
+
+
+        //onde vai ser feito a visualizaçao do dos chamados aberto  
+        private void listaDeVisualizarChamado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

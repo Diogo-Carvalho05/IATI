@@ -68,6 +68,7 @@
             this.btAcesso.TabIndex = 3;
             this.btAcesso.Text = "&ACESSO";
             this.btAcesso.UseVisualStyleBackColor = false;
+            this.btAcesso.Click += new System.EventHandler(this.btAcesso_Click_1);
             this.btAcesso.Enter += new System.EventHandler(this.btAcesso_Click);
             // 
             // label1

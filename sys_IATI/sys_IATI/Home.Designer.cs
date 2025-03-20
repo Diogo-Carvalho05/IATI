@@ -89,6 +89,7 @@
             this.btCadastroAdm.TabIndex = 3;
             this.btCadastroAdm.Text = "Cadastro Funcionario";
             this.btCadastroAdm.UseVisualStyleBackColor = false;
+            this.btCadastroAdm.Click += new System.EventHandler(this.btCadastroAdm_Click);
             // 
             // lblNomeIati
             // 
@@ -109,6 +110,7 @@
             this.listaDeVisualizarChamado.Size = new System.Drawing.Size(529, 137);
             this.listaDeVisualizarChamado.TabIndex = 5;
             this.listaDeVisualizarChamado.UseCompatibleStateImageBehavior = false;
+            this.listaDeVisualizarChamado.SelectedIndexChanged += new System.EventHandler(this.listaDeVisualizarChamado_SelectedIndexChanged);
             // 
             // lblChamados
             // 

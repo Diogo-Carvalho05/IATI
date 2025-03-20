@@ -99,6 +99,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cadastroAdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastroAdm.Designer.cs">
+      <DependentUpon>cadastroAdm.cs</DependentUpon>
+    </Compile>
     <Compile Include="dbConection.cs" />
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
@@ -120,6 +126,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="cadastroAdm.resx">
+      <DependentUpon>cadastroAdm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
