@@ -33,9 +33,11 @@
             this.logoHome = new System.Windows.Forms.PictureBox();
             this.btCadastroUsuario = new System.Windows.Forms.Button();
             this.btCadastroAdm = new System.Windows.Forms.Button();
-            this.lblNomeIati = new System.Windows.Forms.Label();
             this.listaDeVisualizarChamado = new System.Windows.Forms.ListView();
             this.lblChamados = new System.Windows.Forms.Label();
+            this.btEditarFuncionario = new System.Windows.Forms.Button();
+            this.btEditarUsuario = new System.Windows.Forms.Button();
+            this.btEdidarEmpresa = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.logoHome)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,7 +47,7 @@
             this.btCadastroEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btCadastroEmpresa.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCadastroEmpresa.ForeColor = System.Drawing.SystemColors.Control;
-            this.btCadastroEmpresa.Location = new System.Drawing.Point(71, 113);
+            this.btCadastroEmpresa.Location = new System.Drawing.Point(83, 30);
             this.btCadastroEmpresa.Name = "btCadastroEmpresa";
             this.btCadastroEmpresa.Size = new System.Drawing.Size(140, 69);
             this.btCadastroEmpresa.TabIndex = 0;
@@ -69,7 +71,7 @@
             this.btCadastroUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btCadastroUsuario.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCadastroUsuario.ForeColor = System.Drawing.SystemColors.Control;
-            this.btCadastroUsuario.Location = new System.Drawing.Point(254, 112);
+            this.btCadastroUsuario.Location = new System.Drawing.Point(266, 29);
             this.btCadastroUsuario.Name = "btCadastroUsuario";
             this.btCadastroUsuario.Size = new System.Drawing.Size(142, 70);
             this.btCadastroUsuario.TabIndex = 2;
@@ -83,23 +85,13 @@
             this.btCadastroAdm.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btCadastroAdm.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCadastroAdm.ForeColor = System.Drawing.SystemColors.Control;
-            this.btCadastroAdm.Location = new System.Drawing.Point(442, 112);
+            this.btCadastroAdm.Location = new System.Drawing.Point(454, 29);
             this.btCadastroAdm.Name = "btCadastroAdm";
             this.btCadastroAdm.Size = new System.Drawing.Size(158, 70);
             this.btCadastroAdm.TabIndex = 3;
             this.btCadastroAdm.Text = "Cadastro Funcionario";
             this.btCadastroAdm.UseVisualStyleBackColor = false;
             this.btCadastroAdm.Click += new System.EventHandler(this.btCadastroAdm_Click);
-            // 
-            // lblNomeIati
-            // 
-            this.lblNomeIati.AutoSize = true;
-            this.lblNomeIati.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomeIati.Location = new System.Drawing.Point(82, 25);
-            this.lblNomeIati.Name = "lblNomeIati";
-            this.lblNomeIati.Size = new System.Drawing.Size(112, 55);
-            this.lblNomeIati.TabIndex = 4;
-            this.lblNomeIati.Text = "IATI";
             // 
             // listaDeVisualizarChamado
             // 
@@ -122,15 +114,56 @@
             this.lblChamados.TabIndex = 6;
             this.lblChamados.Text = "Chamados";
             // 
+            // btEditarFuncionario
+            // 
+            this.btEditarFuncionario.BackColor = System.Drawing.Color.SlateGray;
+            this.btEditarFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btEditarFuncionario.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btEditarFuncionario.ForeColor = System.Drawing.SystemColors.Control;
+            this.btEditarFuncionario.Location = new System.Drawing.Point(454, 129);
+            this.btEditarFuncionario.Name = "btEditarFuncionario";
+            this.btEditarFuncionario.Size = new System.Drawing.Size(158, 70);
+            this.btEditarFuncionario.TabIndex = 9;
+            this.btEditarFuncionario.Text = "Editar Funcionario";
+            this.btEditarFuncionario.UseVisualStyleBackColor = false;
+            // 
+            // btEditarUsuario
+            // 
+            this.btEditarUsuario.BackColor = System.Drawing.Color.SlateGray;
+            this.btEditarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btEditarUsuario.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btEditarUsuario.ForeColor = System.Drawing.SystemColors.Control;
+            this.btEditarUsuario.Location = new System.Drawing.Point(266, 129);
+            this.btEditarUsuario.Name = "btEditarUsuario";
+            this.btEditarUsuario.Size = new System.Drawing.Size(142, 70);
+            this.btEditarUsuario.TabIndex = 8;
+            this.btEditarUsuario.Text = "Editar Usuario";
+            this.btEditarUsuario.UseVisualStyleBackColor = false;
+            // 
+            // btEdidarEmpresa
+            // 
+            this.btEdidarEmpresa.BackColor = System.Drawing.Color.SlateGray;
+            this.btEdidarEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btEdidarEmpresa.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btEdidarEmpresa.ForeColor = System.Drawing.SystemColors.Control;
+            this.btEdidarEmpresa.Location = new System.Drawing.Point(83, 130);
+            this.btEdidarEmpresa.Name = "btEdidarEmpresa";
+            this.btEdidarEmpresa.Size = new System.Drawing.Size(140, 69);
+            this.btEdidarEmpresa.TabIndex = 7;
+            this.btEdidarEmpresa.Text = "Editar Empresa";
+            this.btEdidarEmpresa.UseVisualStyleBackColor = false;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateGray;
             this.ClientSize = new System.Drawing.Size(663, 453);
+            this.Controls.Add(this.btEditarFuncionario);
+            this.Controls.Add(this.btEditarUsuario);
+            this.Controls.Add(this.btEdidarEmpresa);
             this.Controls.Add(this.lblChamados);
             this.Controls.Add(this.listaDeVisualizarChamado);
-            this.Controls.Add(this.lblNomeIati);
             this.Controls.Add(this.btCadastroAdm);
             this.Controls.Add(this.btCadastroUsuario);
             this.Controls.Add(this.logoHome);
@@ -149,8 +182,10 @@
         private System.Windows.Forms.PictureBox logoHome;
         private System.Windows.Forms.Button btCadastroUsuario;
         private System.Windows.Forms.Button btCadastroAdm;
-        private System.Windows.Forms.Label lblNomeIati;
         private System.Windows.Forms.ListView listaDeVisualizarChamado;
         private System.Windows.Forms.Label lblChamados;
+        private System.Windows.Forms.Button btEditarFuncionario;
+        private System.Windows.Forms.Button btEditarUsuario;
+        private System.Windows.Forms.Button btEdidarEmpresa;
     }
 }
