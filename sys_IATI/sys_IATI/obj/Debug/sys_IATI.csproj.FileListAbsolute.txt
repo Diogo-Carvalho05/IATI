@@ -135,7 +135,6 @@ C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\bin\Debug\System.Text.Encodi
 C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\bin\Debug\System.Text.Json.xml
 C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\bin\Debug\System.Threading.Channels.xml
 C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\bin\Debug\System.Threading.Tasks.Extensions.xml
-C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.Sugestao_IA.resources
 C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.csproj.Up2Date
 C:\Users\diogo.torres\Documents\GitHub\IATI\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.Home.resources
 D:\projeto\IATI\sys_IATI\sys_IATI\bin\Debug\sys_IATI.exe.config
@@ -185,3 +184,5 @@ D:\projeto\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.csproj.CoreCompileInputs.ca
 D:\projeto\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.csproj.Up2Date
 D:\projeto\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.exe
 D:\projeto\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.pdb
+C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.cadastroAdm.resources
+C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.Home.resources

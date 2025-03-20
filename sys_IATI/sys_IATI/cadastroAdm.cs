@@ -130,6 +130,15 @@ namespace sys_IATI
 
         }
 
+        //Botão de voltar
+        private void btVoltar_Click(object sender, EventArgs e)
+        {
+            Home home = new Home(); 
+            home.Show();
+            this.Hide();    
+
+        }
+
         //abaixo esta algumas validações
 
 
@@ -171,9 +180,9 @@ namespace sys_IATI
 
         private void logoCadastroAdm_Click(object sender, EventArgs e)
         {
-            Home home = new Home();
-            home.Show();
-            this.Hide();    
+             
         }
+
+       
     }
 }

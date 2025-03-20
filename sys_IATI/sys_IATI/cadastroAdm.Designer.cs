@@ -59,6 +59,7 @@
             this.txtDataAdmissao = new System.Windows.Forms.MaskedTextBox();
             this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.txtCpf = new System.Windows.Forms.MaskedTextBox();
+            this.btVoltar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.logoCadastroAdm)).BeginInit();
             this.SuspendLayout();
             // 
@@ -343,7 +344,7 @@
             // txtTelefone
             // 
             this.txtTelefone.Location = new System.Drawing.Point(366, 221);
-            this.txtTelefone.Mask = "(999) 000-0000";
+            this.txtTelefone.Mask = "(00)00000-0000";
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(168, 20);
             this.txtTelefone.TabIndex = 35;
@@ -358,12 +359,24 @@
             this.txtCpf.TabIndex = 36;
             this.txtCpf.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtCpf_MaskInputRejected);
             // 
+            // btVoltar
+            // 
+            this.btVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btVoltar.Location = new System.Drawing.Point(671, 51);
+            this.btVoltar.Name = "btVoltar";
+            this.btVoltar.Size = new System.Drawing.Size(75, 23);
+            this.btVoltar.TabIndex = 37;
+            this.btVoltar.Text = "VOLTAR";
+            this.btVoltar.UseVisualStyleBackColor = false;
+            this.btVoltar.Click += new System.EventHandler(this.btVoltar_Click);
+            // 
             // cadastroAdm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateGray;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btVoltar);
             this.Controls.Add(this.txtCpf);
             this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.txtDataAdmissao);
@@ -435,5 +448,6 @@
         private System.Windows.Forms.MaskedTextBox txtDataAdmissao;
         private System.Windows.Forms.MaskedTextBox txtTelefone;
         private System.Windows.Forms.MaskedTextBox txtCpf;
+        private System.Windows.Forms.Button btVoltar;
     }
 }
