@@ -135,14 +135,16 @@
             // 
             // selecaoTxtServico
             // 
-            this.selecaoTxtServico.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.selecaoTxtServico.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.selecaoTxtServico.BackColor = System.Drawing.SystemColors.Window;
+            this.selecaoTxtServico.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.selecaoTxtServico.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.selecaoTxtServico.FormattingEnabled = true;
             this.selecaoTxtServico.Location = new System.Drawing.Point(88, 166);
             this.selecaoTxtServico.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.selecaoTxtServico.Name = "selecaoTxtServico";
-            this.selecaoTxtServico.Size = new System.Drawing.Size(331, 21);
+            this.selecaoTxtServico.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.selecaoTxtServico.Size = new System.Drawing.Size(331, 22);
             this.selecaoTxtServico.TabIndex = 0;
             this.selecaoTxtServico.Text = " -Escolha um serviço";
             this.selecaoTxtServico.SelectedIndexChanged += new System.EventHandler(this.selecaoTxtServico_SelectedIndexChanged);
@@ -225,8 +227,7 @@
             // 
             // Menu_IATI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.SlateGray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(524, 458);
@@ -250,6 +251,7 @@
             this.Name = "Menu_IATI";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Text = "Menu_IATI";
+            this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

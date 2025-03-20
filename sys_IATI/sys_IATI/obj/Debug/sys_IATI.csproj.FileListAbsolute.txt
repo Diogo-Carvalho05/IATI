@@ -68,7 +68,6 @@ C:\Users\diogo.torres\Documents\GitHub\IATI\IATI\sys_IATI\sys_IATI\obj\Debug\sys
 C:\Users\diogo.torres\Documents\GitHub\IATI\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.Login_IATI.resources
 C:\Users\diogo.torres\Documents\GitHub\IATI\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.Menu_IATI.resources
 C:\Users\diogo.torres\Documents\GitHub\IATI\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.Properties.Resources.resources
-C:\Users\diogo.torres\Documents\GitHub\IATI\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.Sugestao_IA.resources
 C:\Users\diogo.torres\Documents\GitHub\IATI\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.csproj.GenerateResource.cache
 C:\Users\diogo.torres\Documents\GitHub\IATI\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.csproj.CoreCompileInputs.cache
 C:\Users\diogo.torres\Documents\GitHub\IATI\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.csproj.Up2Date
@@ -138,3 +137,4 @@ C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\bin\Debug\System.Threading.C
 C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.Sugestao_IA.resources
 C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.csproj.Up2Date
+C:\Users\diogo.torres\Documents\GitHub\IATI\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.Home.resources

@@ -53,12 +53,7 @@ namespace sys_IATI
 
         //botao de iniciar o chamado 
         private void btchamado_Click(object sender, EventArgs e)
-        {
-
-            Sugestao_IA IA = new Sugestao_IA();
-            IA.Show();
-            this.Hide();
-           
+        {           
 
         }
         
