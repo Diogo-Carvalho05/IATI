@@ -45,5 +45,10 @@ namespace sys_IATI
         {
 
         }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

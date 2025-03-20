@@ -49,8 +49,8 @@ namespace sys_IATI
                         if (result > 0)
                         {
                           
-                            Menu_IATI menu = new Menu_IATI();
-                            menu.Show();
+                            Home home = new Home();
+                            home.Show();
                             this.Hide(); // Oculta a tela de login
                         }
                         else
@@ -80,7 +80,6 @@ namespace sys_IATI
         {
 
         }
-
         private void btAcesso_Click_1(object sender, EventArgs e)
         {
 

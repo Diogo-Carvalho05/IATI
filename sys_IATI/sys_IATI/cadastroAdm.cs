@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace sys_IATI
 {
     public partial class cadastroAdm : Form
@@ -183,6 +184,15 @@ namespace sys_IATI
              
         }
 
-       
+        private void btDeSair_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Você realmente deseja sair?", "Sair", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            // Se o usuário confirmar, fecha a aplicação
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit(); // Fecha a aplicação
+            }
+        }
     }
 }

@@ -168,8 +168,10 @@
             this.Controls.Add(this.btCadastroUsuario);
             this.Controls.Add(this.logoHome);
             this.Controls.Add(this.btCadastroEmpresa);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Home";
             this.Text = "Home";
+            this.Load += new System.EventHandler(this.Home_Load);
             ((System.ComponentModel.ISupportInitialize)(this.logoHome)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
