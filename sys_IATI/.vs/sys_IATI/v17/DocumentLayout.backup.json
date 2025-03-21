@@ -26,11 +26,31 @@
               "Title": "cadastroAdm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\wagne\\Documents\\PIM\\IATI\\sys_IATI\\sys_IATI\\cadastroAdm.cs",
               "RelativeDocumentMoniker": "sys_IATI\\cadastroAdm.cs",
+<<<<<<< Updated upstream
               "ToolTip": "C:\\Users\\wagne\\Documents\\PIM\\IATI\\sys_IATI\\sys_IATI\\cadastroAdm.cs [Design]",
+=======
+              "ToolTip": "D:\\projeto\\IATI\\sys_IATI\\sys_IATI\\cadastroAdm.cs [Design]",
+>>>>>>> Stashed changes
               "RelativeToolTip": "sys_IATI\\cadastroAdm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-20T18:18:33.662Z",
               "EditorCaption": " [Design]"
+<<<<<<< Updated upstream
+=======
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "cadastroAdm.cs",
+              "DocumentMoniker": "D:\\projeto\\IATI\\sys_IATI\\sys_IATI\\cadastroAdm.cs",
+              "RelativeDocumentMoniker": "sys_IATI\\cadastroAdm.cs",
+              "ToolTip": "D:\\projeto\\IATI\\sys_IATI\\sys_IATI\\cadastroAdm.cs",
+              "RelativeToolTip": "sys_IATI\\cadastroAdm.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAvwK8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T18:15:07.121Z",
+              "EditorCaption": ""
+>>>>>>> Stashed changes
             }
           ]
         }
