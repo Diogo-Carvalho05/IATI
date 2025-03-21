@@ -17,14 +17,18 @@ namespace sys_IATI
     {
 
 
-        public Menu_IATI()
+        public Menu_IATI(string nomeUsuario)
         {
             InitializeComponent();
+
+
+            lblMenuUser.Text = nomeUsuario;
         }
         //label nome do usuario 
         private void lblMenuUser_Click(object sender, EventArgs e)
         {
            
+
         }
         //label sreviço
         private void lblServico_Click(object sender, EventArgs e)

@@ -88,6 +88,7 @@
             this.txtTitulo.Location = new System.Drawing.Point(88, 211);
             this.txtTitulo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtTitulo.Name = "txtTitulo";
+            this.txtTitulo.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtTitulo.Size = new System.Drawing.Size(331, 21);
             this.txtTitulo.TabIndex = 1;
             this.txtTitulo.TextChanged += new System.EventHandler(this.txtTitulo_TextChanged);
@@ -131,6 +132,7 @@
             this.txtDescricao.Location = new System.Drawing.Point(88, 255);
             this.txtDescricao.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtDescricao.Name = "txtDescricao";
+            this.txtDescricao.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtDescricao.Size = new System.Drawing.Size(331, 21);
             this.txtDescricao.TabIndex = 2;
             this.txtDescricao.TextChanged += new System.EventHandler(this.txtDescricao_TextChanged);
