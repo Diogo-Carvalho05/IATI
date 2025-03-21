@@ -186,3 +186,7 @@ D:\projeto\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.exe
 D:\projeto\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.pdb
 C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.cadastroAdm.resources
 C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.Home.resources
+C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\bin\Debug\CircularProgressBar.dll
+C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\bin\Debug\WinFormAnimation.dll
+C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\bin\Debug\CircularProgressBar.xml
+C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.Tela_de_Carregar.resources

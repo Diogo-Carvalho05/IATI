@@ -60,7 +60,9 @@
             this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.txtCpf = new System.Windows.Forms.MaskedTextBox();
             this.btVoltar = new System.Windows.Forms.Button();
+            this.btDeSair = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.logoCadastroAdm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btDeSair)).BeginInit();
             this.SuspendLayout();
             // 
             // logoCadastroAdm
@@ -313,6 +315,9 @@
             // btSalvarAdm
             // 
             this.btSalvarAdm.BackColor = System.Drawing.Color.YellowGreen;
+            this.btSalvarAdm.FlatAppearance.BorderSize = 0;
+            this.btSalvarAdm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.btSalvarAdm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btSalvarAdm.Location = new System.Drawing.Point(26, 366);
             this.btSalvarAdm.Name = "btSalvarAdm";
             this.btSalvarAdm.Size = new System.Drawing.Size(75, 42);
@@ -362,7 +367,10 @@
             // btVoltar
             // 
             this.btVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btVoltar.Location = new System.Drawing.Point(671, 51);
+            this.btVoltar.FlatAppearance.BorderSize = 0;
+            this.btVoltar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btVoltar.Location = new System.Drawing.Point(665, 52);
             this.btVoltar.Name = "btVoltar";
             this.btVoltar.Size = new System.Drawing.Size(75, 23);
             this.btVoltar.TabIndex = 37;
@@ -370,12 +378,25 @@
             this.btVoltar.UseVisualStyleBackColor = false;
             this.btVoltar.Click += new System.EventHandler(this.btVoltar_Click);
             // 
+            // btDeSair
+            // 
+            this.btDeSair.Image = global::sys_IATI.Properties.Resources.download_removebg_preview;
+            this.btDeSair.Location = new System.Drawing.Point(735, 12);
+            this.btDeSair.Name = "btDeSair";
+            this.btDeSair.Size = new System.Drawing.Size(53, 32);
+            this.btDeSair.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btDeSair.TabIndex = 38;
+            this.btDeSair.TabStop = false;
+            this.btDeSair.Click += new System.EventHandler(this.btDeSair_Click);
+            // 
             // cadastroAdm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateGray;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btDeSair);
             this.Controls.Add(this.btVoltar);
             this.Controls.Add(this.txtCpf);
             this.Controls.Add(this.txtTelefone);
@@ -407,10 +428,13 @@
             this.Controls.Add(this.txtNomeAdm);
             this.Controls.Add(this.lblCadastroAdm);
             this.Controls.Add(this.logoCadastroAdm);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "cadastroAdm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "cadastroAdm";
             this.Load += new System.EventHandler(this.cadastroAdm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.logoCadastroAdm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btDeSair)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -449,5 +473,6 @@
         private System.Windows.Forms.MaskedTextBox txtTelefone;
         private System.Windows.Forms.MaskedTextBox txtCpf;
         private System.Windows.Forms.Button btVoltar;
+        private System.Windows.Forms.PictureBox btDeSair;
     }
 }

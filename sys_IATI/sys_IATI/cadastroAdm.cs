@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace sys_IATI
 {
@@ -92,6 +94,46 @@ namespace sys_IATI
             {
                 MessageBox.Show("CPF inválido.");
                 return;
+            }
+
+            try
+            {
+                // Cria uma instância da conexão com o banco de dados
+                using (dbConnection dbConnection = new dbConnection())
+                {
+                    // Query SQL para inserir os dados na tabela Funcionario
+                    string query = @"
+                INSERT INTO Funcionario 
+                (nome, cpf, data_nascimento, email, telefone, endereco, cargo, setor, data_admissao, salario_mensal, statos) 
+                VALUES 
+                (@nome, @cpf, @data_nascimento, @email, @telefone, @endereco, @cargo, @setor, @data_admissao, @salario_mensal, @statos)";
+
+                    // Cria um comando SQL usando a conexão aberta
+                    using (NpgsqlCommand command = new NpgsqlCommand(query, dbConnection.Connection))
+                    {
+                        // Adiciona os parâmetros com os valores dos campos do formulário
+                        command.Parameters.AddWithValue("@nome", txtNomeAdm.Text);
+                        command.Parameters.AddWithValue("@cpf", txtCpf.Text);
+                        command.Parameters.AddWithValue("@data_nascimento", DateTime.Parse(txtDataNascimento.Text));
+                        command.Parameters.AddWithValue("@email", txtEmail.Text);
+                        command.Parameters.AddWithValue("@telefone", txtTelefone.Text);
+                        command.Parameters.AddWithValue("@endereco", txtEndereco.Text);
+                        command.Parameters.AddWithValue("@cargo", txtCargo.Text);
+                        command.Parameters.AddWithValue("@setor", txtSetor.Text);
+                        command.Parameters.AddWithValue("@data_admissao", DateTime.Parse(txtDataAdmissao.Text));
+                        command.Parameters.AddWithValue("@salario_mensal", decimal.Parse(txtSalarioMensal.Text));
+                        command.Parameters.AddWithValue("@statos", btStatosAtivo.Checked ? "ativo" : "inativo");
+
+                        // Executa o comando SQL
+                        command.ExecuteNonQuery();
+                    }
+                }
+
+                MessageBox.Show("Funcionário cadastrado com sucesso!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao salvar funcionário: " + ex.Message);
             }
 
 
@@ -183,6 +225,15 @@ namespace sys_IATI
              
         }
 
-       
+        private void btDeSair_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Você realmente deseja sair?", "Sair", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            // Se o usuário confirmar, fecha a aplicação
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit(); // Fecha a aplicação
+            }
+        }
     }
 }
