@@ -19,11 +19,6 @@ namespace sys_IATI
             InitializeComponent();
         }
 
-        //caixa de texto ID
-        private void txtId_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         //caixa de texto nome
         private void txtNomeAdm_TextChanged(object sender, EventArgs e)
@@ -104,9 +99,9 @@ namespace sys_IATI
                     // Query SQL para inserir os dados na tabela Funcionario
                     string query = @"
                 INSERT INTO Funcionario 
-                (nome, cpf, data_nascimento, email, telefone, endereco, cargo, setor, data_admissao, salario_mensal, statos) 
+                (nome, cpf, data_nascimento, email, telefone, endereco, cargo, setor, data_admissao, salario_mensal, statos, senha) 
                 VALUES 
-                (@nome, @cpf, @data_nascimento, @email, @telefone, @endereco, @cargo, @setor, @data_admissao, @salario_mensal, @statos)";
+                (@nome, @cpf, @data_nascimento, @email, @telefone, @endereco, @cargo, @setor, @data_admissao, @salario_mensal, @statos, @senha)";
 
                     // Cria um comando SQL usando a conexão aberta
                     using (NpgsqlCommand command = new NpgsqlCommand(query, dbConnection.Connection))
@@ -123,6 +118,7 @@ namespace sys_IATI
                         command.Parameters.AddWithValue("@data_admissao", DateTime.Parse(txtDataAdmissao.Text));
                         command.Parameters.AddWithValue("@salario_mensal", decimal.Parse(txtSalarioMensal.Text));
                         command.Parameters.AddWithValue("@statos", btStatosAtivo.Checked ? "ativo" : "inativo");
+                        command.Parameters.AddWithValue("@senha", txtSenha.Text);
 
                         // Executa o comando SQL
                         command.ExecuteNonQuery();

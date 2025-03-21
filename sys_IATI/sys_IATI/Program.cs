@@ -16,7 +16,7 @@ namespace sys_IATI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login_IATI());
+            Application.Run(new Tela_de_Carregar());
         }
     }
 }

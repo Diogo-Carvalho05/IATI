@@ -34,8 +34,6 @@
             this.txtNomeAdm = new System.Windows.Forms.TextBox();
             this.lblNomeAdm = new System.Windows.Forms.Label();
             this.lblCpf = new System.Windows.Forms.Label();
-            this.lblId = new System.Windows.Forms.Label();
-            this.txtId = new System.Windows.Forms.TextBox();
             this.lblDataNascimento = new System.Windows.Forms.Label();
             this.lblEndereco = new System.Windows.Forms.Label();
             this.txtEndereco = new System.Windows.Forms.TextBox();
@@ -114,25 +112,6 @@
             this.lblCpf.Size = new System.Drawing.Size(32, 16);
             this.lblCpf.TabIndex = 5;
             this.lblCpf.Text = "CPF";
-            // 
-            // lblId
-            // 
-            this.lblId.AutoSize = true;
-            this.lblId.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblId.Location = new System.Drawing.Point(23, 124);
-            this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(21, 16);
-            this.lblId.TabIndex = 9;
-            this.lblId.Text = "ID";
-            // 
-            // txtId
-            // 
-            this.txtId.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtId.Location = new System.Drawing.Point(26, 143);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(61, 23);
-            this.txtId.TabIndex = 0;
-            this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
             // 
             // lblDataNascimento
             // 
@@ -421,8 +400,6 @@
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblDataNascimento);
-            this.Controls.Add(this.lblId);
-            this.Controls.Add(this.txtId);
             this.Controls.Add(this.lblCpf);
             this.Controls.Add(this.lblNomeAdm);
             this.Controls.Add(this.txtNomeAdm);
@@ -447,8 +424,6 @@
         private System.Windows.Forms.TextBox txtNomeAdm;
         private System.Windows.Forms.Label lblNomeAdm;
         private System.Windows.Forms.Label lblCpf;
-        private System.Windows.Forms.Label lblId;
-        private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label lblDataNascimento;
         private System.Windows.Forms.Label lblEndereco;
         private System.Windows.Forms.TextBox txtEndereco;

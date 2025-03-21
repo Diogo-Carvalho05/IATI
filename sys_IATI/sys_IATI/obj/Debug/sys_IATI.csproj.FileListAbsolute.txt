@@ -190,3 +190,7 @@ C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\bin\Debug\CircularProgressBa
 C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\bin\Debug\WinFormAnimation.dll
 C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\bin\Debug\CircularProgressBar.xml
 C:\Users\wagne\Documents\PIM\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.Tela_de_Carregar.resources
+D:\projeto\IATI\sys_IATI\sys_IATI\obj\Debug\sys_IATI.Tela_de_Carregar.resources
+D:\projeto\IATI\sys_IATI\sys_IATI\bin\Debug\CircularProgressBar.dll
+D:\projeto\IATI\sys_IATI\sys_IATI\bin\Debug\WinFormAnimation.dll
+D:\projeto\IATI\sys_IATI\sys_IATI\bin\Debug\CircularProgressBar.xml
