@@ -40,22 +40,25 @@ namespace sys_IATI
         }
 
 
-        //onde vai ser feito a visualizaçao do dos chamados aberto  
-        private void listaDeVisualizarChamado_SelectedIndexChanged(object sender, EventArgs e)
+        //onde vai ser feito a manipulaçao de chamados  
+        private void controleDaCelulaDeChamado(object sender, DataGridViewCellEventArgs e)
         {
 
         }
+
+        //lista de chamados
+        private void listaDeChamado_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
 
         private void Home_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        //botao de sair 
         private void btSair_Click(object sender, EventArgs e)
         {
                 Application.Exit(); // Fecha a aplicação

@@ -33,14 +33,15 @@
             this.logoHome = new System.Windows.Forms.PictureBox();
             this.btCadastroUsuario = new System.Windows.Forms.Button();
             this.btCadastroAdm = new System.Windows.Forms.Button();
-            this.listaDeVisualizarChamado = new System.Windows.Forms.ListView();
             this.lblChamados = new System.Windows.Forms.Label();
             this.btEditarFuncionario = new System.Windows.Forms.Button();
             this.btEditarUsuario = new System.Windows.Forms.Button();
             this.btEdidarEmpresa = new System.Windows.Forms.Button();
             this.btSair = new System.Windows.Forms.PictureBox();
+            this.listaDeChamado = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.logoHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btSair)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaDeChamado)).BeginInit();
             this.SuspendLayout();
             // 
             // btCadastroEmpresa
@@ -84,6 +85,7 @@
             // btCadastroAdm
             // 
             this.btCadastroAdm.BackColor = System.Drawing.Color.SlateGray;
+            this.btCadastroAdm.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btCadastroAdm.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btCadastroAdm.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCadastroAdm.ForeColor = System.Drawing.SystemColors.Control;
@@ -94,17 +96,6 @@
             this.btCadastroAdm.Text = "Cadastro Funcionario";
             this.btCadastroAdm.UseVisualStyleBackColor = false;
             this.btCadastroAdm.Click += new System.EventHandler(this.btCadastroAdm_Click);
-            // 
-            // listaDeVisualizarChamado
-            // 
-            this.listaDeVisualizarChamado.BackColor = System.Drawing.Color.SlateGray;
-            this.listaDeVisualizarChamado.HideSelection = false;
-            this.listaDeVisualizarChamado.Location = new System.Drawing.Point(71, 238);
-            this.listaDeVisualizarChamado.Name = "listaDeVisualizarChamado";
-            this.listaDeVisualizarChamado.Size = new System.Drawing.Size(529, 137);
-            this.listaDeVisualizarChamado.TabIndex = 5;
-            this.listaDeVisualizarChamado.UseCompatibleStateImageBehavior = false;
-            this.listaDeVisualizarChamado.SelectedIndexChanged += new System.EventHandler(this.listaDeVisualizarChamado_SelectedIndexChanged);
             // 
             // lblChamados
             // 
@@ -166,18 +157,29 @@
             this.btSair.TabStop = false;
             this.btSair.Click += new System.EventHandler(this.btSair_Click);
             // 
+            // listaDeChamado
+            // 
+            this.listaDeChamado.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.listaDeChamado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.listaDeChamado.Location = new System.Drawing.Point(71, 242);
+            this.listaDeChamado.Name = "listaDeChamado";
+            this.listaDeChamado.Size = new System.Drawing.Size(541, 150);
+            this.listaDeChamado.TabIndex = 11;
+            this.listaDeChamado.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.controleDaCelulaDeChamado);
+            this.listaDeChamado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.listaDeChamado_CellContentClick);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateGray;
             this.ClientSize = new System.Drawing.Size(663, 453);
+            this.Controls.Add(this.listaDeChamado);
             this.Controls.Add(this.btSair);
             this.Controls.Add(this.btEditarFuncionario);
             this.Controls.Add(this.btEditarUsuario);
             this.Controls.Add(this.btEdidarEmpresa);
             this.Controls.Add(this.lblChamados);
-            this.Controls.Add(this.listaDeVisualizarChamado);
             this.Controls.Add(this.btCadastroAdm);
             this.Controls.Add(this.btCadastroUsuario);
             this.Controls.Add(this.logoHome);
@@ -189,6 +191,7 @@
             this.Load += new System.EventHandler(this.Home_Load);
             ((System.ComponentModel.ISupportInitialize)(this.logoHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btSair)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaDeChamado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,11 +203,11 @@
         private System.Windows.Forms.PictureBox logoHome;
         private System.Windows.Forms.Button btCadastroUsuario;
         private System.Windows.Forms.Button btCadastroAdm;
-        private System.Windows.Forms.ListView listaDeVisualizarChamado;
         private System.Windows.Forms.Label lblChamados;
         private System.Windows.Forms.Button btEditarFuncionario;
         private System.Windows.Forms.Button btEditarUsuario;
         private System.Windows.Forms.Button btEdidarEmpresa;
         private System.Windows.Forms.PictureBox btSair;
+        private System.Windows.Forms.DataGridView listaDeChamado;
     }
 }

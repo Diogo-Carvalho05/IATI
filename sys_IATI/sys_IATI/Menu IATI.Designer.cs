@@ -44,7 +44,9 @@
             this.btSugestao1 = new System.Windows.Forms.RadioButton();
             this.btSugestao2 = new System.Windows.Forms.RadioButton();
             this.btSugestao3 = new System.Windows.Forms.RadioButton();
+            this.btDeSair = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btDeSair)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -162,7 +164,10 @@
             // 
             // btchamado
             // 
-            this.btchamado.BackColor = System.Drawing.Color.SeaGreen;
+            this.btchamado.BackColor = System.Drawing.Color.Green;
+            this.btchamado.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btchamado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGreen;
+            this.btchamado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btchamado.Location = new System.Drawing.Point(179, 423);
             this.btchamado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btchamado.Name = "btchamado";
@@ -175,7 +180,9 @@
             // btSelecionarSugestao
             // 
             this.btSelecionarSugestao.BackColor = System.Drawing.Color.SlateGray;
-            this.btSelecionarSugestao.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btSelecionarSugestao.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btSelecionarSugestao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(100)))), ((int)(((byte)(110)))));
+            this.btSelecionarSugestao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btSelecionarSugestao.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btSelecionarSugestao.Location = new System.Drawing.Point(382, 351);
             this.btSelecionarSugestao.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -225,12 +232,24 @@
             this.btSugestao3.UseVisualStyleBackColor = true;
             this.btSugestao3.CheckedChanged += new System.EventHandler(this.btSugestao3_CheckedChanged);
             // 
+            // btDeSair
+            // 
+            this.btDeSair.Image = global::sys_IATI.Properties.Resources.download_removebg_preview;
+            this.btDeSair.Location = new System.Drawing.Point(463, 0);
+            this.btDeSair.Name = "btDeSair";
+            this.btDeSair.Size = new System.Drawing.Size(61, 37);
+            this.btDeSair.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btDeSair.TabIndex = 16;
+            this.btDeSair.TabStop = false;
+            this.btDeSair.Click += new System.EventHandler(this.btDeSair_Click);
+            // 
             // Menu_IATI
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.SlateGray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(524, 458);
+            this.Controls.Add(this.btDeSair);
             this.Controls.Add(this.btSugestao3);
             this.Controls.Add(this.btSugestao2);
             this.Controls.Add(this.btSugestao1);
@@ -255,6 +274,7 @@
             this.Text = "Menu_IATI";
             this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btDeSair)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -277,5 +297,6 @@
         private System.Windows.Forms.RadioButton btSugestao1;
         private System.Windows.Forms.RadioButton btSugestao2;
         private System.Windows.Forms.RadioButton btSugestao3;
+        private System.Windows.Forms.PictureBox btDeSair;
     }
 }
