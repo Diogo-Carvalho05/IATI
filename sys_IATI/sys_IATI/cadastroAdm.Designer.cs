@@ -315,6 +315,9 @@
             // btSalvarAdm
             // 
             this.btSalvarAdm.BackColor = System.Drawing.Color.YellowGreen;
+            this.btSalvarAdm.FlatAppearance.BorderSize = 0;
+            this.btSalvarAdm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.btSalvarAdm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btSalvarAdm.Location = new System.Drawing.Point(26, 366);
             this.btSalvarAdm.Name = "btSalvarAdm";
             this.btSalvarAdm.Size = new System.Drawing.Size(75, 42);
@@ -364,6 +367,9 @@
             // btVoltar
             // 
             this.btVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btVoltar.FlatAppearance.BorderSize = 0;
+            this.btVoltar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btVoltar.Location = new System.Drawing.Point(665, 52);
             this.btVoltar.Name = "btVoltar";
             this.btVoltar.Size = new System.Drawing.Size(75, 23);
@@ -424,6 +430,7 @@
             this.Controls.Add(this.logoCadastroAdm);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "cadastroAdm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "cadastroAdm";
             this.Load += new System.EventHandler(this.cadastroAdm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.logoCadastroAdm)).EndInit();

@@ -50,5 +50,19 @@ namespace sys_IATI
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btSair_Click(object sender, EventArgs e)
+        {
+            // Se o usuário confirmar, fecha a aplicação
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit(); // Fecha a aplicação
+            }
+        }
     }
 }
