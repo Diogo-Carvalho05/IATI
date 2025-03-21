@@ -40,11 +40,9 @@
             this.selecaoTxtServico = new System.Windows.Forms.ComboBox();
             this.lblAjuda = new System.Windows.Forms.Label();
             this.btchamado = new System.Windows.Forms.Button();
-            this.btSelecionarSugestao = new System.Windows.Forms.Button();
-            this.btSugestao1 = new System.Windows.Forms.RadioButton();
-            this.btSugestao2 = new System.Windows.Forms.RadioButton();
-            this.btSugestao3 = new System.Windows.Forms.RadioButton();
             this.btDeSair = new System.Windows.Forms.PictureBox();
+            this.gerarSugestao = new System.Windows.Forms.Button();
+            this.txtGeraResposta = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btDeSair)).BeginInit();
             this.SuspendLayout();
@@ -124,8 +122,9 @@
             this.lblIati.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIati.Name = "lblIati";
             this.lblIati.Size = new System.Drawing.Size(88, 43);
-            this.lblIati.TabIndex = 7;
+            this.lblIati.TabIndex = 0;
             this.lblIati.Text = "IATI";
+            this.lblIati.Click += new System.EventHandler(this.lblIati_Click);
             // 
             // txtDescricao
             // 
@@ -140,17 +139,17 @@
             // selecaoTxtServico
             // 
             this.selecaoTxtServico.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.selecaoTxtServico.BackColor = System.Drawing.SystemColors.Window;
-            this.selecaoTxtServico.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.selecaoTxtServico.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.selecaoTxtServico.BackColor = System.Drawing.SystemColors.Menu;
+            this.selecaoTxtServico.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.selecaoTxtServico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.selecaoTxtServico.ForeColor = System.Drawing.Color.Black;
             this.selecaoTxtServico.FormattingEnabled = true;
             this.selecaoTxtServico.Location = new System.Drawing.Point(88, 166);
             this.selecaoTxtServico.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.selecaoTxtServico.Name = "selecaoTxtServico";
             this.selecaoTxtServico.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.selecaoTxtServico.Size = new System.Drawing.Size(331, 22);
-            this.selecaoTxtServico.TabIndex = 0;
-            this.selecaoTxtServico.Text = " -Escolha um serviço";
+            this.selecaoTxtServico.Size = new System.Drawing.Size(331, 21);
+            this.selecaoTxtServico.TabIndex = 10;
             this.selecaoTxtServico.SelectedIndexChanged += new System.EventHandler(this.selecaoTxtServico_SelectedIndexChanged);
             // 
             // lblAjuda
@@ -179,61 +178,6 @@
             this.btchamado.UseVisualStyleBackColor = false;
             this.btchamado.Click += new System.EventHandler(this.btchamado_Click);
             // 
-            // btSelecionarSugestao
-            // 
-            this.btSelecionarSugestao.BackColor = System.Drawing.Color.SlateGray;
-            this.btSelecionarSugestao.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btSelecionarSugestao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(100)))), ((int)(((byte)(110)))));
-            this.btSelecionarSugestao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btSelecionarSugestao.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btSelecionarSugestao.Location = new System.Drawing.Point(382, 351);
-            this.btSelecionarSugestao.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btSelecionarSugestao.Name = "btSelecionarSugestao";
-            this.btSelecionarSugestao.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btSelecionarSugestao.Size = new System.Drawing.Size(97, 23);
-            this.btSelecionarSugestao.TabIndex = 12;
-            this.btSelecionarSugestao.Text = "Selecionar";
-            this.btSelecionarSugestao.UseVisualStyleBackColor = false;
-            // 
-            // btSugestao1
-            // 
-            this.btSugestao1.AutoSize = true;
-            this.btSugestao1.Location = new System.Drawing.Point(88, 328);
-            this.btSugestao1.Name = "btSugestao1";
-            this.btSugestao1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btSugestao1.Size = new System.Drawing.Size(93, 17);
-            this.btSugestao1.TabIndex = 13;
-            this.btSugestao1.TabStop = true;
-            this.btSugestao1.Text = "sugestao IA";
-            this.btSugestao1.UseVisualStyleBackColor = true;
-            this.btSugestao1.CheckedChanged += new System.EventHandler(this.btSugestao1_CheckedChanged_1);
-            // 
-            // btSugestao2
-            // 
-            this.btSugestao2.AutoSize = true;
-            this.btSugestao2.Location = new System.Drawing.Point(88, 351);
-            this.btSugestao2.Name = "btSugestao2";
-            this.btSugestao2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btSugestao2.Size = new System.Drawing.Size(93, 17);
-            this.btSugestao2.TabIndex = 14;
-            this.btSugestao2.TabStop = true;
-            this.btSugestao2.Text = "sugestao IA";
-            this.btSugestao2.UseVisualStyleBackColor = true;
-            this.btSugestao2.CheckedChanged += new System.EventHandler(this.btSugestao2_CheckedChanged);
-            // 
-            // btSugestao3
-            // 
-            this.btSugestao3.AutoSize = true;
-            this.btSugestao3.Location = new System.Drawing.Point(88, 374);
-            this.btSugestao3.Name = "btSugestao3";
-            this.btSugestao3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btSugestao3.Size = new System.Drawing.Size(93, 17);
-            this.btSugestao3.TabIndex = 15;
-            this.btSugestao3.TabStop = true;
-            this.btSugestao3.Text = "sugestao IA";
-            this.btSugestao3.UseVisualStyleBackColor = true;
-            this.btSugestao3.CheckedChanged += new System.EventHandler(this.btSugestao3_CheckedChanged);
-            // 
             // btDeSair
             // 
             this.btDeSair.Image = global::sys_IATI.Properties.Resources.download_removebg_preview;
@@ -245,17 +189,33 @@
             this.btDeSair.TabStop = false;
             this.btDeSair.Click += new System.EventHandler(this.btDeSair_Click);
             // 
+            // gerarSugestao
+            // 
+            this.gerarSugestao.Location = new System.Drawing.Point(375, 289);
+            this.gerarSugestao.Name = "gerarSugestao";
+            this.gerarSugestao.Size = new System.Drawing.Size(137, 23);
+            this.gerarSugestao.TabIndex = 17;
+            this.gerarSugestao.Text = "GERA SUGESTÃO";
+            this.gerarSugestao.UseVisualStyleBackColor = true;
+            this.gerarSugestao.Click += new System.EventHandler(this.gerarSugestao_Click);
+            // 
+            // txtGeraResposta
+            // 
+            this.txtGeraResposta.Location = new System.Drawing.Point(88, 318);
+            this.txtGeraResposta.Multiline = true;
+            this.txtGeraResposta.Name = "txtGeraResposta";
+            this.txtGeraResposta.Size = new System.Drawing.Size(331, 69);
+            this.txtGeraResposta.TabIndex = 18;
+            // 
             // Menu_IATI
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.SlateGray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(524, 458);
+            this.Controls.Add(this.txtGeraResposta);
+            this.Controls.Add(this.gerarSugestao);
             this.Controls.Add(this.btDeSair);
-            this.Controls.Add(this.btSugestao3);
-            this.Controls.Add(this.btSugestao2);
-            this.Controls.Add(this.btSugestao1);
-            this.Controls.Add(this.btSelecionarSugestao);
             this.Controls.Add(this.btchamado);
             this.Controls.Add(this.lblAjuda);
             this.Controls.Add(this.selecaoTxtServico);
@@ -295,10 +255,8 @@
         private System.Windows.Forms.ComboBox selecaoTxtServico;
         private System.Windows.Forms.Label lblAjuda;
         private System.Windows.Forms.Button btchamado;
-        private System.Windows.Forms.Button btSelecionarSugestao;
-        private System.Windows.Forms.RadioButton btSugestao1;
-        private System.Windows.Forms.RadioButton btSugestao2;
-        private System.Windows.Forms.RadioButton btSugestao3;
         private System.Windows.Forms.PictureBox btDeSair;
+        private System.Windows.Forms.Button gerarSugestao;
+        private System.Windows.Forms.TextBox txtGeraResposta;
     }
 }

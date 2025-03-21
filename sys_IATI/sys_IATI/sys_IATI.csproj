@@ -111,12 +111,19 @@
     <Compile Include="cadastroAdm.Designer.cs">
       <DependentUpon>cadastroAdm.cs</DependentUpon>
     </Compile>
+    <Compile Include="conexaoIA.cs" />
     <Compile Include="dbConection.cs" />
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IApassoApasso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IApassoApasso.Designer.cs">
+      <DependentUpon>IApassoApasso.cs</DependentUpon>
     </Compile>
     <Compile Include="Login IATI.cs">
       <SubType>Form</SubType>

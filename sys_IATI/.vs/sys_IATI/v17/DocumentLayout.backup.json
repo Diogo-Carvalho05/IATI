@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "D:\\projeto\\IATI\\sys_IATI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{06168E84-017D-4244-8521-5C5428E3B75D}|sys_IATI\\sys_IATI.csproj|d:\\projeto\\iati\\sys_iati\\sys_iati\\menu iati.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{06168E84-017D-4244-8521-5C5428E3B75D}|sys_IATI\\sys_IATI.csproj|solutionrelative:sys_iati\\menu iati.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{06168E84-017D-4244-8521-5C5428E3B75D}|sys_IATI\\sys_IATI.csproj|d:\\projeto\\iati\\sys_iati\\sys_iati\\menu iati.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{06168E84-017D-4244-8521-5C5428E3B75D}|sys_IATI\\sys_IATI.csproj|solutionrelative:sys_iati\\menu iati.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{06168E84-017D-4244-8521-5C5428E3B75D}|sys_IATI\\sys_IATI.csproj|d:\\projeto\\iati\\sys_iati\\sys_iati\\login iati.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06168E84-017D-4244-8521-5C5428E3B75D}|sys_IATI\\sys_IATI.csproj|solutionrelative:sys_iati\\login iati.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{06168E84-017D-4244-8521-5C5428E3B75D}|sys_IATI\\sys_IATI.csproj|d:\\projeto\\iati\\sys_iati\\sys_iati\\conexaoia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06168E84-017D-4244-8521-5C5428E3B75D}|sys_IATI\\sys_IATI.csproj|solutionrelative:sys_iati\\conexaoia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{06168E84-017D-4244-8521-5C5428E3B75D}|sys_IATI\\sys_IATI.csproj|d:\\projeto\\iati\\sys_iati\\sys_iati\\menu iati.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{06168E84-017D-4244-8521-5C5428E3B75D}|sys_IATI\\sys_IATI.csproj|solutionrelative:sys_iati\\menu iati.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{06168E84-017D-4244-8521-5C5428E3B75D}|sys_IATI\\sys_IATI.csproj|d:\\projeto\\iati\\sys_iati\\sys_iati\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06168E84-017D-4244-8521-5C5428E3B75D}|sys_IATI\\sys_IATI.csproj|solutionrelative:sys_iati\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06168E84-017D-4244-8521-5C5428E3B75D}|sys_IATI\\sys_IATI.csproj|d:\\projeto\\iati\\sys_iati\\sys_iati\\login iati.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06168E84-017D-4244-8521-5C5428E3B75D}|sys_IATI\\sys_IATI.csproj|solutionrelative:sys_iati\\login iati.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,48 +30,76 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\projeto\\IATI\\sys_IATI\\sys_IATI\\Program.cs",
+              "RelativeDocumentMoniker": "sys_IATI\\Program.cs",
+              "ToolTip": "D:\\projeto\\IATI\\sys_IATI\\sys_IATI\\Program.cs",
+              "RelativeToolTip": "sys_IATI\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAewBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T18:33:15.481Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login IATI.cs",
+              "DocumentMoniker": "D:\\projeto\\IATI\\sys_IATI\\sys_IATI\\Login IATI.cs",
+              "RelativeDocumentMoniker": "sys_IATI\\Login IATI.cs",
+              "ToolTip": "D:\\projeto\\IATI\\sys_IATI\\sys_IATI\\Login IATI.cs",
+              "RelativeToolTip": "sys_IATI\\Login IATI.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAvwDIAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T18:33:55.776Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Login IATI.cs",
-              "DocumentMoniker": "D:\\projeto\\IATI\\sys_IATI\\sys_IATI\\Login IATI.cs",
-              "RelativeDocumentMoniker": "sys_IATI\\Login IATI.cs",
-              "ToolTip": "D:\\projeto\\IATI\\sys_IATI\\sys_IATI\\Login IATI.cs",
-              "RelativeToolTip": "sys_IATI\\Login IATI.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAwwC4AAAAvAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "conexaoIA.cs",
+              "DocumentMoniker": "D:\\projeto\\IATI\\sys_IATI\\sys_IATI\\conexaoIA.cs",
+              "RelativeDocumentMoniker": "sys_IATI\\conexaoIA.cs",
+              "ToolTip": "D:\\projeto\\IATI\\sys_IATI\\sys_IATI\\conexaoIA.cs",
+              "RelativeToolTip": "sys_IATI\\conexaoIA.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAADwvx0AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T13:48:03.217Z",
+              "WhenOpened": "2025-03-21T20:49:50.217Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Menu IATI.cs",
               "DocumentMoniker": "D:\\projeto\\IATI\\sys_IATI\\sys_IATI\\Menu IATI.cs",
               "RelativeDocumentMoniker": "sys_IATI\\Menu IATI.cs",
               "ToolTip": "D:\\projeto\\IATI\\sys_IATI\\sys_IATI\\Menu IATI.cs",
               "RelativeToolTip": "sys_IATI\\Menu IATI.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAAwFcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAswLEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T13:28:47.125Z",
+              "WhenOpened": "2025-03-21T19:07:58.005Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Menu IATI.cs [Design]",
               "DocumentMoniker": "D:\\projeto\\IATI\\sys_IATI\\sys_IATI\\Menu IATI.cs",
               "RelativeDocumentMoniker": "sys_IATI\\Menu IATI.cs",
               "ToolTip": "D:\\projeto\\IATI\\sys_IATI\\sys_IATI\\Menu IATI.cs [Design]",
               "RelativeToolTip": "sys_IATI\\Menu IATI.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T13:27:27.631Z",
+              "WhenOpened": "2025-03-21T18:23:56.984Z",
               "EditorCaption": " [Design]"
             }
           ]
