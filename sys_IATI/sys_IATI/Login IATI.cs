@@ -48,7 +48,7 @@ namespace sys_IATI
                     else if (VerificarCredenciais(db, "usuario", nome, senha))
                     {
                         MessageBox.Show("Login de usuário realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        Menu_IATI menu = new Menu_IATI();//nome); 
+                        Menu_IATI menu = new Menu_IATI(nome); 
                         menu.Show();
                         this.Hide(); // Oculta a tela de login
                     }
