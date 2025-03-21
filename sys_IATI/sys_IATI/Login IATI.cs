@@ -36,27 +36,25 @@ namespace sys_IATI
             {
                 try
                 {
-                    // Consulta SQL para verificar o usuário e senha
-                    var query = "SELECT COUNT(*) FROM funcionario WHERE nome = @nome AND senha = @senha";
-                    using (var cmd = new NpgsqlCommand(query, db.Connection))
+                    // Verifica se é um funcionário
+                    if (VerificarCredenciais(db, "funcionario", nome, senha))
                     {
-                        // Passando os parâmetros corretamente
-                        cmd.Parameters.AddWithValue("@nome", nome); 
-                        cmd.Parameters.AddWithValue("@senha", senha); 
-
-                        int result = Convert.ToInt32(cmd.ExecuteScalar());
-
-                        if (result > 0)
-                        {
-                          
-                            Home home = new Home();
-                            home.Show();
-                            this.Hide(); // Oculta a tela de login
-                        }
-                        else
-                        {
-                            MessageBox.Show("Usuário ou senha incorretos.");
-                        }
+                        MessageBox.Show("Login de funcionário realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Home home = new Home();
+                        home.Show();
+                        this.Hide(); // Oculta a tela de login
+                    }
+                    // Verifica se é um usuário
+                    else if (VerificarCredenciais(db, "usuario", nome, senha))
+                    {
+                        MessageBox.Show("Login de usuário realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                      Menu_IATI menu = new Menu_IATI(); 
+                        menu.Show();
+                        this.Hide(); // Oculta a tela de login
+                    }
+                    else
+                    {
+                        MessageBox.Show("Usuário ou senha incorretos.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 catch (Exception ex)
@@ -65,6 +63,21 @@ namespace sys_IATI
                 }
             }
 
+        }
+
+        private bool VerificarCredenciais(dbConnection db, string tabela, string nome, string senha)
+        {
+            // Consulta SQL para verificar o usuário e senha
+            var query = $"SELECT COUNT(*) FROM {tabela} WHERE nome = @nome AND senha = @senha";
+            using (var cmd = new NpgsqlCommand(query, db.Connection))
+            {
+                // Passando os parâmetros corretamente
+                cmd.Parameters.AddWithValue("@nome", nome);
+                cmd.Parameters.AddWithValue("@senha", senha);
+
+                int result = Convert.ToInt32(cmd.ExecuteScalar());
+                return result > 0; // Retorna true se encontrar um registro
+            }
         }
 
 
