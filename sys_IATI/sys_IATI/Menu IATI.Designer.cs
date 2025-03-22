@@ -40,11 +40,9 @@
             this.selecaoTxtServico = new System.Windows.Forms.ComboBox();
             this.lblAjuda = new System.Windows.Forms.Label();
             this.btchamado = new System.Windows.Forms.Button();
-            this.btDeSair = new System.Windows.Forms.PictureBox();
             this.gerarSugestao = new System.Windows.Forms.Button();
             this.txtGeraResposta = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btDeSair)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -178,17 +176,6 @@
             this.btchamado.UseVisualStyleBackColor = false;
             this.btchamado.Click += new System.EventHandler(this.btchamado_Click);
             // 
-            // btDeSair
-            // 
-            this.btDeSair.Image = global::sys_IATI.Properties.Resources.download_removebg_preview;
-            this.btDeSair.Location = new System.Drawing.Point(463, 0);
-            this.btDeSair.Name = "btDeSair";
-            this.btDeSair.Size = new System.Drawing.Size(61, 37);
-            this.btDeSair.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btDeSair.TabIndex = 16;
-            this.btDeSair.TabStop = false;
-            this.btDeSair.Click += new System.EventHandler(this.btDeSair_Click);
-            // 
             // gerarSugestao
             // 
             this.gerarSugestao.Location = new System.Drawing.Point(375, 289);
@@ -217,7 +204,6 @@
             this.ClientSize = new System.Drawing.Size(524, 458);
             this.Controls.Add(this.txtGeraResposta);
             this.Controls.Add(this.gerarSugestao);
-            this.Controls.Add(this.btDeSair);
             this.Controls.Add(this.btchamado);
             this.Controls.Add(this.lblAjuda);
             this.Controls.Add(this.selecaoTxtServico);
@@ -230,7 +216,7 @@
             this.Controls.Add(this.lblMenuUser);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Menu_IATI";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -238,7 +224,6 @@
             this.Text = "Menu_IATI";
             this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btDeSair)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -257,7 +242,6 @@
         private System.Windows.Forms.ComboBox selecaoTxtServico;
         private System.Windows.Forms.Label lblAjuda;
         private System.Windows.Forms.Button btchamado;
-        private System.Windows.Forms.PictureBox btDeSair;
         private System.Windows.Forms.Button gerarSugestao;
         private System.Windows.Forms.TextBox txtGeraResposta;
     }

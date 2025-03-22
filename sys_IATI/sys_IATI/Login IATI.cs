@@ -98,9 +98,6 @@ namespace sys_IATI
 
         }
 
-        private void btSair_Click(object sender, EventArgs e)
-        {  
-                Application.Exit(); // Fecha a aplicação
-        }
+        
     }
 }

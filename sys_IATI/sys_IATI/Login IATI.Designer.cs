@@ -36,9 +36,7 @@
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.logo = new System.Windows.Forms.PictureBox();
             this.lblUsuario = new System.Windows.Forms.Label();
-            this.btSair = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btSair)).BeginInit();
             this.SuspendLayout();
             // 
             // txtPasseword
@@ -118,17 +116,6 @@
             this.lblUsuario.TabIndex = 9;
             this.lblUsuario.Text = "USUARIO";
             // 
-            // btSair
-            // 
-            this.btSair.Image = global::sys_IATI.Properties.Resources.download_removebg_preview;
-            this.btSair.Location = new System.Drawing.Point(185, 2);
-            this.btSair.Name = "btSair";
-            this.btSair.Size = new System.Drawing.Size(55, 31);
-            this.btSair.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btSair.TabIndex = 10;
-            this.btSair.TabStop = false;
-            this.btSair.Click += new System.EventHandler(this.btSair_Click);
-            // 
             // Login_IATI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -136,7 +123,6 @@
             this.BackColor = System.Drawing.Color.SlateGray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(236, 238);
-            this.Controls.Add(this.btSair);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.logo);
             this.Controls.Add(this.txtUsuario);
@@ -144,12 +130,11 @@
             this.Controls.Add(this.lblPasseword);
             this.Controls.Add(this.txtPasseword);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Login_IATI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login_IATI";
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btSair)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,6 +149,5 @@
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.PictureBox logo;
         private System.Windows.Forms.Label lblUsuario;
-        private System.Windows.Forms.PictureBox btSair;
     }
 }
