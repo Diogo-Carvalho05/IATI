@@ -19,11 +19,11 @@ namespace sys_IATI
         private conexaoIA conexao;
         private string sugestaoSelecionada;
 
-        public Menu_IATI()//string nomeUsuario)
+        public Menu_IATI(string nomeUsuario)
         {
             InitializeComponent();
 
-            //lblMenuUser.Text = nomeUsuario;
+            lblMenuUser.Text = nomeUsuario;
             AdicionarTiposDeServico();
 
             conexao = new conexaoIA("XYsLAIEOYCkjZVprKTizRNiqPQhloKh2ZclJaNii");
@@ -84,12 +84,7 @@ namespace sys_IATI
         //botao de iniciar o chamado 
         private async void btchamado_Click(object sender, EventArgs e)
         {
-            // Verifica se uma sugestão foi selecionada
-            if (string.IsNullOrEmpty(sugestaoSelecionada))
-            {
-                MessageBox.Show("Por favor, selecione uma sugestão.");
-                return;
-            }
+           
 
             try
             {
@@ -99,32 +94,7 @@ namespace sys_IATI
                 // Abre a nova tela com o passo a passo
                 IApassoApasso instrucoesForm = new IApassoApasso(passoAPasso);
                 instrucoesForm.Show(); // Exibe a nova tela
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Erro ao obter passo a passo: {ex.Message}");
-            }
-
-        }
-
-
-        private async void btGerarSugestoes_Click(object sender, EventArgs e)
-        {
-            // Verifica se uma sugestão foi selecionada
-            if (string.IsNullOrEmpty(sugestaoSelecionada))
-            {
-                MessageBox.Show("Por favor, selecione uma sugestão.");
-                return;
-            }
-
-            try
-            {
-                // Gera o passo a passo com base na sugestão selecionada
-                string passoAPasso = await conexao.GetAIResponse($"Passo a passo para: {sugestaoSelecionada}");
-
-                // Abre a nova tela com o passo a passo
-                IApassoApasso instrucoesForm = new IApassoApasso(passoAPasso);
-                instrucoesForm.Show(); // Exibe a nova tela
+                this.Hide();
             }
             catch (Exception ex)
             {
@@ -132,18 +102,8 @@ namespace sys_IATI
             }
         }
 
-        //botao de sair 
-        private void btDeSair_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
 
-        }
-
-        private void lblIati_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        //botao de gerar sugestao
         private async void gerarSugestao_Click(object sender, EventArgs e)
         {
             // Verifica se a descrição foi preenchida
@@ -161,26 +121,36 @@ namespace sys_IATI
 
             try
             {
-                // Chama a API da Cohere para gerar sugestões
-                string respostaIA = await conexao.GetAIResponse($"Sugestões para: {mensagemParaIA}");
+                // Chama a API da Cohere para gerar um passo a passo
+                string passoAPasso = await conexao.GetAIResponse(mensagemParaIA, true);
 
-               
-
-                // Divide a resposta em até 3 sugestões
-                string[] sugestoes = respostaIA.Split(new[] { '\n', '.', ';' }, StringSplitOptions.RemoveEmptyEntries);
-
-                // Limita o número de sugestões a 3
-                if (sugestoes.Length > 3)
-                {
-                    sugestoes = sugestoes.Take(3).ToArray();
-                }
-
- 
+                // Exibe o passo a passo na caixa de texto
+                txtGeraResposta.Text = passoAPasso;
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Erro ao obter sugestões: {ex.Message}");
+                MessageBox.Show($"Erro ao obter passo a passo: {ex.Message}");
             }
+        }
+
+
+        //botao de sair 
+        private void btDeSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+
+        }
+
+        private void lblIati_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
+        
+
+        private void txtGeraResposta_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

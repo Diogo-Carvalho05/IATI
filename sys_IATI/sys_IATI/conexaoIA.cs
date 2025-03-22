@@ -16,19 +16,24 @@ namespace sys_IATI
             _apiKey = apiKey;
         }
 
-        public async Task<string> GetAIResponse(string userMessage)
+        public async Task<string> GetAIResponse(string userMessage, bool passoAPasso = false)
         {
             using (HttpClient client = new HttpClient())
             {
                 // Adiciona a chave da API no cabeçalho
                 client.DefaultRequestHeaders.Add("Authorization", $"Bearer {_apiKey}");
 
+                // Define o prompt com base no tipo de solicitação
+                string prompt = passoAPasso
+                    ? $"Gere um passo a passo detalhado em detalhes em postugues para resolver o seguinte problema: {userMessage}"
+                    : userMessage;
+
                 // Cria o corpo da requisição no formato JSON
                 var requestBody = new
                 {
-                    prompt = userMessage, // O texto de entrada para a IA
-                    max_tokens = 50, // Número máximo de tokens na resposta
-                    temperature = 0.7, // Controla a criatividade da resposta
+                    prompt = prompt, // O texto de entrada para a IA
+                    max_tokens = 150, // Aumente o número de tokens para respostas mais longas
+                    temperature = 0.5, // Controla a criatividade da resposta
                     stop_sequences = new[] { "\n" } // Sequências que indicam o fim da resposta
                 };
 
@@ -52,4 +57,6 @@ namespace sys_IATI
         }
     }
 }
+    
+
     

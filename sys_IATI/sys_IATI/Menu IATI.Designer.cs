@@ -204,8 +204,10 @@
             this.txtGeraResposta.Location = new System.Drawing.Point(88, 318);
             this.txtGeraResposta.Multiline = true;
             this.txtGeraResposta.Name = "txtGeraResposta";
+            this.txtGeraResposta.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtGeraResposta.Size = new System.Drawing.Size(331, 69);
             this.txtGeraResposta.TabIndex = 18;
+            this.txtGeraResposta.TextChanged += new System.EventHandler(this.txtGeraResposta_TextChanged);
             // 
             // Menu_IATI
             // 
