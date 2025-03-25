@@ -133,14 +133,6 @@ namespace sys_IATI
             }
         }
 
-
-        //botao de sair 
-        private void btDeSair_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-
-        }
-
         private void lblIati_Click(object sender, EventArgs e)
         {
 
