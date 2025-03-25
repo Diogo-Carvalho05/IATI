@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace sys_IATI
 {
-    public partial class Home : Form
+    public partial class Home: Form
     {
         public Home()
         {
@@ -22,7 +22,7 @@ namespace sys_IATI
         {
 
         }
-
+       
         //botao de cadastro do usuario
         private void btCadastroUsuario_Click(object sender, EventArgs e)
         {
@@ -32,7 +32,7 @@ namespace sys_IATI
         //botao de cadastro do admFunconario
         private void btCadastroAdm_Click(object sender, EventArgs e)
         {
-            cadastroAdm cadAdm = new cadastroAdm();
+            cadastroAdm  cadAdm = new cadastroAdm();
             cadAdm.Show();
             this.Hide(); // Oculta a tela de login
 
@@ -57,7 +57,12 @@ namespace sys_IATI
         {
 
         }
+
+        //botao de sair 
+        private void btSair_Click(object sender, EventArgs e)
+        {
+                Application.Exit(); // Fecha a aplicação
+            
+        }
     }
 }
-
-

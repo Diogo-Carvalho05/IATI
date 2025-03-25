@@ -37,8 +37,10 @@
             this.btEditarFuncionario = new System.Windows.Forms.Button();
             this.btEditarUsuario = new System.Windows.Forms.Button();
             this.btEdidarEmpresa = new System.Windows.Forms.Button();
+            this.btSair = new System.Windows.Forms.PictureBox();
             this.listaDeChamado = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.logoHome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btSair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaDeChamado)).BeginInit();
             this.SuspendLayout();
             // 
@@ -144,6 +146,17 @@
             this.btEdidarEmpresa.Text = "Editar Empresa";
             this.btEdidarEmpresa.UseVisualStyleBackColor = false;
             // 
+            // btSair
+            // 
+            this.btSair.Image = global::sys_IATI.Properties.Resources.download_removebg_preview;
+            this.btSair.Location = new System.Drawing.Point(618, 0);
+            this.btSair.Name = "btSair";
+            this.btSair.Size = new System.Drawing.Size(50, 49);
+            this.btSair.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btSair.TabIndex = 10;
+            this.btSair.TabStop = false;
+            this.btSair.Click += new System.EventHandler(this.btSair_Click);
+            // 
             // listaDeChamado
             // 
             this.listaDeChamado.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -162,6 +175,7 @@
             this.BackColor = System.Drawing.Color.SlateGray;
             this.ClientSize = new System.Drawing.Size(663, 453);
             this.Controls.Add(this.listaDeChamado);
+            this.Controls.Add(this.btSair);
             this.Controls.Add(this.btEditarFuncionario);
             this.Controls.Add(this.btEditarUsuario);
             this.Controls.Add(this.btEdidarEmpresa);
@@ -170,12 +184,13 @@
             this.Controls.Add(this.btCadastroUsuario);
             this.Controls.Add(this.logoHome);
             this.Controls.Add(this.btCadastroEmpresa);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.Load += new System.EventHandler(this.Home_Load);
             ((System.ComponentModel.ISupportInitialize)(this.logoHome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btSair)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaDeChamado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -192,6 +207,7 @@
         private System.Windows.Forms.Button btEditarFuncionario;
         private System.Windows.Forms.Button btEditarUsuario;
         private System.Windows.Forms.Button btEdidarEmpresa;
+        private System.Windows.Forms.PictureBox btSair;
         private System.Windows.Forms.DataGridView listaDeChamado;
     }
 }
